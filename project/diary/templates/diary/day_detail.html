@@ -1,0 +1,10 @@
+{% extends 'diary/base.html' %}
+
+{% block content %}
+<form action="" method="POST">
+{{form.as_p}}
+<p>こちらのページを削除します</p>
+<button type="submit">送信</button>
+{% csrf_token %}
+</form>
+{% endblock %}
